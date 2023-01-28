@@ -1,0 +1,27 @@
+body {
+	background-color: #2b3035;
+}
+.navbar .logo-icon {
+	width: 40px;
+	height: 40px;
+	margin-left: 0.5rem;
+	border-radius: 99999px;
+}
+.nav-btn {
+	margin-left: 1.5rem;
+}
+@media (max-width: 992px) {
+	ul.navbar-nav {
+		margin-left: 1rem !important;
+	}
+	.navbar-buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.navbar-buttons .btn {
+		margin-top: 1rem;
+		width: 120px;
+	}
+}
