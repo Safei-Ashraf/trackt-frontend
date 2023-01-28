@@ -1,6 +1,8 @@
 body {
 	background-color: #2b3035;
 	height: 100%;
+	overflow-x: hidden;
+	color: #ddd;
 }
 main {
 	/* border: 2px solid blue; */
@@ -123,6 +125,68 @@ main {
 }
 @media (max-width: 992px) {
 	.hero-text {
-		bottom: -4rem;
+		bottom: -3rem;
+	}
+}
+/*footer*/
+.footer {
+	margin-top: 3rem;
+	max-width: 100vw;
+	color: #ddd;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	min-height: 300px;
+}
+.footer div {
+	width: 25%;
+	text-align: center;
+	padding-top: 1rem;
+	text-align: left;
+	padding-bottom: 6rem;
+}
+.footer-list {
+	list-style: none;
+	width: 100%;
+	font-size: 1.5rem;
+	text-align: left;
+}
+.footer-list a {
+	color: #ddd;
+	text-decoration: dotted;
+}
+.footer-list li {
+	margin-top: 0.8rem;
+	margin-left: -1.8rem;
+}
+.copyright {
+	text-align: center;
+	position: relative;
+}
+.copyright::after {
+	content: "";
+	height: 1px;
+	width: 100%;
+	background-color: #555;
+	position: absolute;
+	top: -10px;
+	left: 0;
+	right: 0;
+}
+@media (max-width: 992px) {
+	.footer {
+		flex-direction: column;
+	}
+	.footer div {
+		width: 100%;
+		text-align: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.footer-list {
+		list-style: none;
+		width: 100%;
+		font-size: 1.5rem;
+		text-align: center;
 	}
 }
