@@ -1,6 +1,7 @@
 body {
 	background-color: #2b3035;
 }
+/*Nav Style*/
 .navbar .logo-icon {
 	width: 40px;
 	height: 40px;
@@ -9,6 +10,16 @@ body {
 }
 .nav-btn {
 	margin-left: 1.5rem;
+}
+.navbar-brand {
+	margin-bottom: -12px !important;
+}
+.navbar-buttons .btn {
+	margin-top: 1rem;
+	width: 136.5px;
+	height: 38px;
+	font-size: 1.2rem;
+	font-weight: 700;
 }
 @media (max-width: 992px) {
 	ul.navbar-nav {
@@ -20,8 +31,26 @@ body {
 		align-items: center;
 		flex-direction: column;
 	}
-	.navbar-buttons .btn {
-		margin-top: 1rem;
-		width: 120px;
+
+	.laguage-ddown.btn-group > .btn {
+		margin-left: 0.5rem;
+		margin-top: 0.5rem;
 	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-collapse {
+		display: flex !important;
+		flex-basis: auto;
+		align-content: space-between;
+		justify-content: space-around;
+		align-items: end;
+	}
+}
+.language-icon {
+	width: 50px;
+	height: 20px;
+}
+.laguage-ddown.btn-group > .btn {
+	padding-left: 0 !important;
+	margin-left: 0.5rem;
 }
