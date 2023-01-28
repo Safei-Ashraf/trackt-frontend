@@ -10,6 +10,7 @@ main {
 .nav-header {
 	height: fit-content;
 	margin-bottom: 5rem;
+	box-shadow: rgb(26, 25, 25) 1px 1px 2px;
 }
 .navbar .logo-icon {
 	width: 50px;
